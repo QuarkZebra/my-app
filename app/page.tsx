@@ -20,6 +20,11 @@ export default function Home() {
         >
           Sign out
         </button>
+        <button
+          className="bg-red-600 hover:bg-red-400 text-white font-bold py-3 px-12 rounded-lg transition-colors"
+        >
+          Big One
+        </button>
       </div>
     </main>
   )
