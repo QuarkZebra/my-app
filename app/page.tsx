@@ -20,8 +20,9 @@ export default function Home() {
         >
           Sign out
         </button>
+         <p className="text-gray-400 mb-8"> </p>
         <button
-          className="bg-red-600 hover:bg-red-400 text-white font-bold py-3 px-12 rounded-lg transition-colors"
+          className="text-10xl bg-red-600 hover:bg-red-400 text-white font-bold py-6 px-12 rounded-lg transition-colors"
         >
           Big One
         </button>
