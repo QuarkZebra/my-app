@@ -27,9 +27,8 @@ export async function middleware(request: NextRequest) {
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  // If user is not signed in and trying to access a protected page, redirect to login
-  if (!user && !request.nextUrl.pathname.startsWith('/login') && 
-      !request.nextUrl.pathname.startsWith('/signup')) {
+  // Only protect /310sPrep routes — everything else is public
+  if (!user && request.nextUrl.pathname.startsWith('/310sPrep')) {
     const url = request.nextUrl.clone()
     url.pathname = '/login'
     return NextResponse.redirect(url)
