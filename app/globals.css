@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap');
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  --cream: #f0ece4;
+  --cream-dim: rgba(240, 236, 228, 0.45);
+  --cream-bright: rgba(240, 236, 228, 0.92);
 }
 
 @theme inline {
@@ -12,18 +19,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #0a0c18;
+  color: var(--cream);
+  font-family: var(--font-body);
+  overflow-x: hidden;
 }
+
+::-webkit-scrollbar { width: 0px; }
 
 /* ── Confidence slider custom styling ── */
 /* Remove default browser appearance so we can style it ourselves */
