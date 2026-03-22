@@ -483,7 +483,7 @@ export default function Prep310sPage() {
                 const pct = bp && bp.total > 0 ? Math.round((bp.correct / bp.total) * 100) : null
                 const isWeak = pct != null && pct < 70
                 return (
-                  <div key={block.id} style={{ background: C.surface, border: `1px solid ${isWeak ? 'rgba(240,79,79,0.3)' : count > 0 ? 'rgba(45,110,247,0.28)' : C.border}`, borderRadius: 10, padding: '14px 16px', opacity: count === 0 ? 0.5 : 1, background: isWeak ? `rgba(240,79,79,0.03)` : C.surface }}>
+                  <div key={block.id} style={{ background: isWeak ? `rgba(240,79,79,0.03)` : C.surface, border: `1px solid ${isWeak ? 'rgba(240,79,79,0.3)' : count > 0 ? 'rgba(45,110,247,0.28)' : C.border}`, borderRadius: 10, padding: '14px 16px', opacity: count === 0 ? 0.5 : 1 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
                       <div style={{ width: 28, height: 28, borderRadius: 6, background: isWeak ? C.dangerBg : C.surface2, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed', sans-serif", fontSize: 13, fontWeight: 700, color: isWeak ? C.danger : C.accent2 }}>{block.id}</div>
                       <div style={{ flex: 1, fontSize: 14, fontWeight: 500 }}>{block.name}</div>
