@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { createClient } from './lib/supabase'
 
 export default function Home() {
@@ -46,7 +47,14 @@ export default function Home() {
     <main className="min-h-screen bg-gray-950 text-white flex items-center justify-center">
       <div className="text-center">
         <h1 className="text-5xl font-bold text-blue-400 mb-4">310S Prep</h1>
-        <p className="text-gray-400 mb-8">You are logged in.</p>
+        <p className="text-gray-400 mb-6">You are logged in.</p>
+
+        <Link
+          href="/310sPrep"
+          className="inline-block bg-purple-700 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-lg transition-colors mb-8"
+        >
+          Start Quiz →
+        </Link>
 
         {showBig && (
           <button

@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ── Confidence slider custom styling ── */
+/* Remove default browser appearance so we can style it ourselves */
+input[type="range"].confidence-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* The draggable thumb — purple circle */
+input[type="range"].confidence-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  cursor: pointer;
+  border: 2px solid #1f2937;
+  box-shadow: 0 0 4px rgba(139, 92, 246, 0.5);
+}
+
+input[type="range"].confidence-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  cursor: pointer;
+  border: 2px solid #1f2937;
+  box-sizing: border-box;
+}
