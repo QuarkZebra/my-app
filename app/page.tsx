@@ -28,6 +28,7 @@ export default function Home() {
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
 
+  
   // Intersection observer for scroll-triggered reveals
   useEffect(() => {
     const observer = new IntersectionObserver(
