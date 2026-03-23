@@ -289,9 +289,9 @@ export default function Prep310sPage() {
 
   const navItems = [
     { id: 'home', label: 'Home', target: 'home' as View },
-    { id: 'quiz', label: 'Quiz', target: 'quiz-config' as View },
-    { id: 'learn', label: 'Learn', target: 'learn' as View },
-    { id: 'progress', label: 'Progress', target: 'progress' as View },
+    { id: 'quiz', label: 'Practice', target: 'quiz-config' as View },
+    { id: 'learn', label: 'Review', target: 'learn' as View },
+    { id: 'progress', label: 'Track', target: 'progress' as View },
     { id: 'ask', label: 'Ask', target: 'ask' as View },
   ]
 
